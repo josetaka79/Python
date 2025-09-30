@@ -1,0 +1,28 @@
+# Define the Restaurant class
+class Restaurant:
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    # Method to describe the restaurant
+    def describe_restaurant(self):
+        print(f"Restaurant Name: {self.restaurant_name}")
+        print(f"Cuisine Type: {self.cuisine_type}")
+
+    # Method to indicate the restaurant is open
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} is now open!")
+
+# Create three different restaurant instances
+restaurant1 = Restaurant("Mama J", "African Food")
+restaurant2 = Restaurant("Sushi Paradise", "Japanese")
+restaurant3 = Restaurant("Spice Corner", "Indian")
+
+# Call describe_restaurant() for each instance
+restaurant1.describe_restaurant()
+print()  # Just to add a blank line for readability
+
+restaurant2.describe_restaurant()
+print()
+
+restaurant3.describe_restaurant()
